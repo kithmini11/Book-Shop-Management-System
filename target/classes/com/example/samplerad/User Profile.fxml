@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="684.0" prefWidth="1127.0" style="-fx-border-color: #4397C1;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.samplerad.UserProfileController">
+   <children>
+      <AnchorPane layoutX="302.0" layoutY="87.0" prefHeight="218.0" prefWidth="679.0" style="-fx-border-color: #4397C1; -fx-border-radius: 10PX;">
+         <children>
+      
+            <ImageView fx:id="profileImageView" fitHeight="124.0" fitWidth="141.0" layoutX="92.0" layoutY="23.0">
+               <image>
+                  <Image url="@../../../Images/img1.jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="319.0" layoutY="85.0" prefHeight="38.0" prefWidth="260.0" style="-fx-background-color: #C5E4F3; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="email" layoutX="66.0" layoutY="8.0" text="Silva@gmail.com">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="ENVELOPE" layoutX="24.0" layoutY="25.0" size="20" text="" wrappingWidth="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="319.0" layoutY="143.0" prefHeight="38.0" prefWidth="260.0" style="-fx-background-color: #C5E4F3; -fx-background-radius: 20px;">
+               <children>
+                  <FontAwesomeIconView glyphName="PHONE" layoutX="24.0" layoutY="27.0" size="20" text="" />
+                  <Label fx:id="telephone" layoutX="71.0" layoutY="9.0" prefHeight="20.0" prefWidth="106.0" text="074 - 5671423">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="319.0" layoutY="23.0" prefHeight="38.0" prefWidth="260.0" style="-fx-background-color: #C5E4F3; -fx-background-radius: 20px;">
+               <children>
+                  <Label fx:id="name" layoutX="66.0" layoutY="8.0" text="H.A.S.D Silva">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <FontAwesomeIconView glyphName="USER" layoutX="25.0" layoutY="25.0" size="20" text="" />
+               </children>
+            </AnchorPane>
+            <FontAwesomeIconView fill="#127fdf" glyphName="TWITTER" layoutX="110.0" layoutY="180.0" size="20" text="" />
+            <FontAwesomeIconView fill="#144dea" glyphName="FACEBOOK" layoutX="156.0" layoutY="179.0" size="20" />
+            <FontAwesomeIconView fill="#c11095" glyphName="INSTAGRAM" layoutX="197.0" layoutY="180.0" size="20" text="" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="-1.0" prefHeight="694.0" prefWidth="223.0" style="-fx-background-color: #C5E4F3; -fx-background-radius: 0px 50px 0px 0px;" styleClass="anchor-pane">
+         <children>
+
+                        <Button fx:id="deleteAccountButton" layoutX="65.0" layoutY="492.0" mnemonicParsing="false" onAction="#handleDeleteAccount" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #E9F5FB;" styleClass="choose-image-button" text="Delete Account" />
+
+                        <FontAwesomeIconView fill="#cf1313" glyphName="TRASH" layoutX="39.0" layoutY="512.0" size="20" text="" />
+            <Button fx:id="back" layoutX="39.0" layoutY="549.0" mnemonicParsing="false" onAction="#handleback" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #4397C1;" text="Back to Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="logout" layoutX="39.0" layoutY="617.0" mnemonicParsing="false" onAction="#handlelogout" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #4397C1;" text="Logout" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="510.0" layoutY="21.0" styleClass="label-title" text="User Profile" textFill="#0a29a6">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="303.0" layoutY="321.0" prefHeight="310.0" prefWidth="679.0" style="-fx-border-color: #4397C1; -fx-border-radius: 10px;">
+         <children>
+      
+            <PasswordField fx:id="passwordField" layoutX="54.0" layoutY="221.0" prefHeight="26.0" prefWidth="354.0" promptText="password" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" styleClass="text-field" />
+      
+            <TextField fx:id="phoneField" layoutX="54.0" layoutY="174.0" prefHeight="26.0" prefWidth="354.0" promptText="phone" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" styleClass="text-field" />
+            <Label layoutX="56.0" layoutY="155.0" styleClass="label" text="Phone Number" textFill="#060a81" />
+            <Label layoutX="54.0" layoutY="203.0" styleClass="label" text="Password" textFill="#060a81" />
+      
+            <TextField fx:id="emailField" layoutX="53.0" layoutY="126.0" prefHeight="26.0" prefWidth="354.0" promptText="email" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" styleClass="text-field" />
+            <Label layoutX="54.0" layoutY="107.0" styleClass="label" text="Email" textFill="#060a81" />
+      
+                  <TextField fx:id="nameField" layoutX="53.0" layoutY="80.0" prefHeight="26.0" prefWidth="354.0" promptText="name" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" styleClass="text-field" />
+      
+                  <Label layoutX="53.0" layoutY="62.0" styleClass="label" text="Full Name" textFill="#060a81" />
+      
+                  <Button fx:id="saveButton" layoutX="171.0" layoutY="261.0" mnemonicParsing="false" onAction="#handleSaveProfile" prefHeight="35.0" prefWidth="128.0" style="-fx-background-color: #50C878; -fx-background-radius: 10px;" styleClass="button-save" text="Save Profile" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+      
+                        <Button fx:id="chooseImageButton" layoutX="481.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleChooseImage" prefHeight="27.0" prefWidth="138.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #529FC7; -fx-border-radius: 10px;" styleClass="choose-image-button" text="Choose Profile Image" />
+      
+            <Button fx:id="removeImageButton" layoutX="481.0" layoutY="158.0" mnemonicParsing="false" onAction="#handleRemoveImage" style="-fx-background-color: #E9F5FB; -fx-border-color: #529FC7; -fx-border-radius: 10px;" styleClass="label" text="Remove Profile  Image" />
+            <Label layoutX="20.0" layoutY="17.0" text="Edit Profile">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

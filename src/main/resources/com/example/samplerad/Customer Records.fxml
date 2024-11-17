@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="697.0" prefWidth="1127.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #B7DDF0; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.samplerad.CustomerController">
+   <children>
+      <AnchorPane layoutX="473.0" layoutY="25.0" prefHeight="616.0" prefWidth="718.0" style="-fx-background-color: #E2F1F9; -fx-background-radius: 10px;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="709.0" layoutY="46.0" text="Customer Records" textFill="#0a29a6">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+
+      <VBox layoutX="535.0" layoutY="125.0" prefHeight="149.0" prefWidth="252.0" spacing="10">
+         <children>
+            <Label text="Customer ID" textFill="#18099c" />
+            <TextField fx:id="customerIdField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+            <Label text="Name" textFill="#18099c" />
+            <TextField fx:id="nameField" layoutX="10.0" layoutY="38.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+            <Label text="Address" textFill="#18099c" />
+            <TextField fx:id="addressField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="876.0" layoutY="123.0" prefHeight="143.0" prefWidth="252.0" spacing="10">
+         <children>
+            <Label text="Phone Number" textFill="#18099c" />
+            <TextField fx:id="phoneNumberField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+            <Label text="Email" textFill="#18099c" />
+            <TextField fx:id="emailField" layoutX="10.0" layoutY="38.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+            <Label text="Loyalty Status" textFill="#18099c" />
+            <TextField fx:id="loyaltyStatusField" layoutX="10.0" layoutY="38.0" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+         </children>
+      </VBox>
+
+      <TableView fx:id="customerTableView" layoutX="499.0" layoutY="416.0" prefHeight="200.0" prefWidth="665.0" style="-fx-background-color: #9ACBE4; -fx-border-color: #4397C1;">
+         <columns>
+            <TableColumn fx:id="customerIdColumn" prefWidth="85.60000610351562" text="Customer ID" />
+            <TableColumn fx:id="nameColumn" prefWidth="84.0" text="Name" />
+            <TableColumn fx:id="addressColumn" prefWidth="132.00001525878906" text="Address" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="124.79998779296875" text="Phone Number" />
+            <TableColumn fx:id="emailColumn" prefWidth="109.60003662109375" text="Email" />
+            <TableColumn fx:id="loyaltyStatusColumn" prefWidth="107.99993896484375" text="Loyalty Status" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+
+      <Button fx:id="insertButton" alignment="CENTER" layoutX="574.0" layoutY="345.0" mnemonicParsing="false" onAction="#handleInsert" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #50C878; -fx-border-radius: 10px;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="updateButton" alignment="CENTER" layoutX="708.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #007bff; -fx-border-radius: 10px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="deleteButton" alignment="CENTER" layoutX="843.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #dc3545; -fx-border-radius: 10px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="resetButton" alignment="CENTER" layoutX="980.0" layoutY="344.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #6c757d; -fx-border-radius: 10px;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="27.0" layoutY="46.0" prefHeight="580.0" prefWidth="426.0">
+         <children>
+            <ImageView fitHeight="434.0" fitWidth="426.0">
+               <image>
+                  <Image url="@../../../Images/img7.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="145.0" layoutY="486.0" mnemonicParsing="false" onAction="#handleback" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #4397C1;" text="Back to Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

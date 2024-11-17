@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="697.0" prefWidth="1127.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #B7DDF0; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.samplerad.StockController">
+   <children>
+      <AnchorPane layoutX="434.0" layoutY="24.0" prefHeight="663.0" prefWidth="730.0" style="-fx-background-color: #E2F1F9; -fx-background-radius: 10px;" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="633.0" layoutY="48.0" text="Inventory Management" textFill="#0a29a6">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+
+      <VBox layoutX="520.0" layoutY="125.0" prefHeight="200.0" prefWidth="252.0" spacing="10">
+         <children>
+            <Label text="Stock ID" textFill="#18099c" />
+            <TextField fx:id="stockIdField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Supplier ID" textFill="#18099c" />
+            <TextField fx:id="supplierIdField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Book ID" textFill="#18099c" />
+            <TextField fx:id="bookIdField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Author Name" textFill="#18099c" />
+            <TextField fx:id="authorNameField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+         </children>
+      </VBox>
+
+      <VBox layoutX="821.0" layoutY="125.0" prefHeight="200.0" prefWidth="252.0" spacing="10">
+         <children>
+            <Label text="Book Name" textFill="#18099c" />
+            <TextField fx:id="bookNameField" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Buying Price (Per Unit)" textFill="#18099c" />
+            <TextField fx:id="marketprice" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Selling Price (Per Unit)" textFill="#18099c" />
+            <TextField fx:id="sellingprice" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+
+            <Label text="Quantity" textFill="#18099c" />
+            <TextField fx:id="quantity" prefHeight="26.0" prefWidth="294.0" style="-fx-background-color: #E9F5FB; -fx-border-color: #7DBAD8; -fx-border-radius: 5px;" />
+         </children>
+      </VBox>
+
+      <Button fx:id="insertButton" alignment="CENTER" layoutX="517.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleInsert" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #50C878; -fx-border-radius: 10px;" text="Insert" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="updateButton" alignment="CENTER" layoutX="659.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleUpdate" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #007bff; -fx-border-radius: 10px;" text="Update" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="deleteButton" alignment="CENTER" layoutX="805.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleDelete" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #dc3545; -fx-border-radius: 10px;" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <Button fx:id="resetButton" alignment="CENTER" layoutX="958.0" layoutY="403.0" mnemonicParsing="false" onAction="#handleReset" prefHeight="34.0" prefWidth="102.0" style="-fx-background-color: #6c757d; -fx-border-radius: 10px;" text="Reset" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+
+      <TableView fx:id="stockTableView" editable="true" layoutX="461.0" layoutY="460.0" prefHeight="200.0" prefWidth="682.0" style="-fx-background-color: #9ACBE4; -fx-border-color: #4397C1;">
+         <columns>
+            <TableColumn fx:id="stockIdColumn" prefWidth="64.800048828125" text="Stock ID" />
+            <TableColumn fx:id="supplierIdColumn" prefWidth="77.5999755859375" text="Supplier ID" />
+            <TableColumn fx:id="bookIdColumn" prefWidth="64.79998779296875" text="Book ID" />
+            <TableColumn fx:id="authorNameColumn" prefWidth="91.20001220703125" text="Author Name" />
+            <TableColumn fx:id="bookNameColumn" prefWidth="77.5999755859375" text="Book Name" />
+            <TableColumn fx:id="marketpricecolumn" prefWidth="106.4000244140625" text="Buying Price" />
+            <TableColumn fx:id="sellingpricecolumn" prefWidth="91.99993896484375" text="Selling Price" />
+            <TableColumn fx:id="quantitycolumn" prefWidth="71.199951171875" text="Quantity" />
+         </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <AnchorPane layoutX="29.0" layoutY="40.0" prefHeight="638.0" prefWidth="387.0">
+         <children>
+            <ImageView fitHeight="491.0" fitWidth="395.0" layoutX="-13.0" layoutY="-1.0">
+               <image>
+                  <Image url="@../../../Images/img5.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="back" layoutX="121.0" layoutY="526.0" mnemonicParsing="false" onAction="#handleback" prefHeight="38.0" prefWidth="128.0" style="-fx-background-color: #4397C1;" text="Back to Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
