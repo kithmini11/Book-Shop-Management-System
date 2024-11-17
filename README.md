@@ -16,37 +16,36 @@
  essential business processes, offering features
  that make managing a bookshop more efficient and
  less time-consuming.</p>
- <p><h2>Sales Management</h2> - Track all sales activities,
+ <p><h3>Sales Management</h3> - Track all sales activities,
  including book titles, quantities sold, prices, and
- total 
-amounts. The system automatically
+ total amounts. The system automatically
  calculates the total sales amount based on
  entered quantities and unit prices, allowing for
  quick sales tracking and reporting. 
  </p>
  
- <p><h2>Inventory Management</h2> - Keep a real-time record of
+ <p><h3>Inventory Management</h3> - Keep a real-time record of
  stock levels and products in the store. The system
  helps avoid stockouts by allowing quick updates on
  product availability, thus ensuring that the shop has
  sufficient stock to meet customer demand. It can
  also alert managers when it’s time to restock.</p>
    
- <p><h2>Supplier Records</h2> - Manage details of suppliers,
+ <p><h3>Supplier Records</h3> - Manage details of suppliers,
  including their contact information, supplied
  products, and pricing. This feature ensures
  smooth supplier management and enables
  efficient procurement practices, keeping the
  store stocked with the necessary items.</p>
  
- <p><h2>Customer Records</h2> - The system stores important
+ <p><h3>Customer Records</h3> - The system stores important
  customer information such as contact details,
  purchasing history, and preferences, helping the
  bookshop maintain strong relationships with
  customers. This allows for personalized service
  and better customer retention strategies.</p>
  
- <p><h2>User Profiles</h2> - Different users, including
+ <p><h3>User Profiles</h3> - Different users, including
  managers and employees, can access the system
  based on their roles and permissions. This
  ensures security and data integrity while
@@ -55,17 +54,17 @@ amounts. The system automatically
  
  
 <h1>Key Features of the System</h1>
- <p><h2>Real-Time Sales Tracking</h2> - Automatically
+ <p><h3>Real-Time Sales Tracking</h3> - Automatically
  calculates the total amount for each sale based
  on quantity and price per unit.</p>
- <p><h2>User-Friendly Interface</h2> - Simplified navigation
+ <p><h3>User-Friendly Interface</h3> - Simplified navigation
  and visually appealing design, with quick access
  to key features via a sidebar and interactive
  controls.</p>
- <p><h2>Efficient Stock Management</h2> - Real-time updates
+ <p><h3>Efficient Stock Management</h3> - Real-time updates
  and alerts for low-stock items, helping avoid
  inventory shortages and overstocking.</p>
- <p><h2>Customizability</h2> - Tailored to meet the specific
+ <p><h3>Customizability</h3> - Tailored to meet the specific
  needs of the bookshop, the system can adapt as
  the business grows.</p>
  
