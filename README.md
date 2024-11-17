@@ -68,5 +68,26 @@
  needs of the bookshop, the system can adapt as
  the business grows.</p>
 
+ <h2>Sign Up</h2>
  <img src="images/Sign Up.png">
- 
+
+ <h2>Sign In</h2>
+ <img src="images/Sign In.png">
+
+ <h2>Menu</h2>
+ <img src="images/Menu.png">
+
+ <h2>User Profile</h2>
+ <img src="images/User Profile.png">
+
+ <h2>Supplier Records</h2>
+ <img src="images/Supplier Records.png">
+
+ <h2>Inventory Management</h2>
+ <img src="images/Inventory Management.png">
+
+ <h2>Customer Records</h2>
+ <img src="images/Customer Records.png">
+
+ <h2>Sales Management</h2>
+ <img src="images/Sales Management.png">
