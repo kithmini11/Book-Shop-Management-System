@@ -67,4 +67,6 @@
  <p><h3>Customizability</h3> - Tailored to meet the specific
  needs of the bookshop, the system can adapt as
  the business grows.</p>
+
+ <img src="images/Sign Up.png">
  
